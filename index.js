@@ -7,8 +7,8 @@ const helpers = {
             targetArray.push(JSON.parse(JSON.stringify(element)));
         })
     },
-    findCommonElements: (arr1, arr2) => {
-        return arr1.filter(element => arr2.includes(element));
+    findCommonElements: (firstArray, secondArray) => {
+        return firstArray.filter(element => secondArray.includes(element));
     },
     deepEqual: (a, b) => {
         return JSON.stringify(a) === JSON.stringify(b);
@@ -19,8 +19,8 @@ const helpers = {
     getRandomInteger: max => {
         return Math.floor(Math.random() * max) + 1;
     },
-    getMonthNameFromNumber: (num, useFullName) => {
-        if (num > 12 || num < 0) {
+    getMonthNameFromNumber: (monthNumber, useFullName) => {
+        if (monthNumber > 12 || monthNumber < 0) {
             return 'Invalid Month Number';
         }
         let months;
@@ -29,18 +29,18 @@ const helpers = {
         } else {
             months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
         }
-        return months[num - 1];
+        return months[monthNumber - 1];
     },
-    getMonthNumberFromName: name => {
+    getMonthNumberFromName: monthName => {
         let monthsFull = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
         let monthsAbbreviated = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
         for (let i = 0; i < monthsFull.length; i++) {
-            if (name.toLowerCase() === monthsFull[i]) {
+            if (monthName.toLowerCase() === monthsFull[i]) {
                 return i + 1;
             }
         }
         for (let i = 0; i < monthsAbbreviated.length; i++) {
-            if (name.toLowerCase() === monthsAbbreviated[i]) {
+            if (monthName.toLowerCase() === monthsAbbreviated[i]) {
                 return i + 1;
             }
         }
