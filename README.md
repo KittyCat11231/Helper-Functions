@@ -10,6 +10,10 @@ These are just some small helper functions for my projects.
 
 `import helpers from '@kyle11231/helper-functions';`
 
+or
+
+`const helpers = require('@kyle11231/helper-functions');`
+
 ## Functions
 
 ### removeFromArray
