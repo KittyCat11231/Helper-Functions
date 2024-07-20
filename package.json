@@ -1,11 +1,11 @@
 {
   "name": "@kyle11231/helper-functions",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Just some small functions for my projects.",
   "exports": {
     ".": {
-      "require": "./src/index.cjs",
-      "import": "./src/index.mjs"
+      "require": "./index.cjs",
+      "import": "./index.mjs"
     }
   },
   "scripts": {
