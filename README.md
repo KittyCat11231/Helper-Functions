@@ -12,7 +12,7 @@ These are just some small helper functions for my projects.
 
 or
 
-`const helpers = require('@kyle11231/helper-functions');`
+`const { helpers } = require('@kyle11231/helper-functions');`
 
 ## Functions
 
