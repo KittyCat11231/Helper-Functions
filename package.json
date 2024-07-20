@@ -1,8 +1,13 @@
 {
   "name": "@kyle11231/helper-functions",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Just some small functions for my projects.",
-  "main": "index.js",
+  "exports": {
+    ".": {
+      "require": "./src/index.cjs",
+      "import": "./src/index.mjs"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
