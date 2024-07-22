@@ -1,6 +1,6 @@
 const helpers = {
     removeFromArray: (array, removeMe) => {
-        return array.filter(value => JSON.parse(JSON.stringify(value)) !== JSON.parse(JSON.stringify(removeMe)));
+        return array.filter(value => JSON.stringify(value) !== JSON.stringify(removeMe));
     },
     mergeArrayIntoArray: (copiedArray, targetArray) => {
         copiedArray.forEach(element => {
