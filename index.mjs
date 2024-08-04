@@ -3,8 +3,7 @@ const helpers = {
         return array.filter(value => JSON.stringify(value) !== JSON.stringify(removeMe));
     },
     mergeArrayIntoArray: (copiedArray, targetArray) => {
-        copiedArray.forEach(element => {
-            targetArray.push(JSON.parse(JSON.stringify(element)));
+        return targetArray.concat(copiedArray);
         })
     },
     findCommonElements: (firstArray, secondArray) => {
