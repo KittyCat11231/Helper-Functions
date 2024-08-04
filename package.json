@@ -1,6 +1,6 @@
 {
   "name": "@kyle11231/helper-functions",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Just some small functions for my projects.",
   "exports": {
     ".": {
