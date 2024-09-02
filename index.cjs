@@ -4,7 +4,6 @@ const helpers = {
     },
     mergeArrayIntoArray: (copiedArray, targetArray) => {
         return targetArray.concat(copiedArray);
-        })
     },
     findCommonElements: (firstArray, secondArray) => {
         return firstArray.filter(element => secondArray.includes(element));
@@ -44,6 +43,13 @@ const helpers = {
             }
         }
         return 0;
+    },
+    isNull: data => {
+        if (data === null || data === 'null') {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
 
