@@ -85,7 +85,8 @@ Returns true if the input is either null or a string that says "null".
 Usage:
 `let isNull = helpers.isNull(data)`
 
-Example:
-    console.log(helpers.isNull(null));       // Returns true
-    console.log(helpers.isNull('null'));     // Returns true
-    console.log(helpers.isNull('foobar'));      // Returns false
+Examples:
+
+`console.log(helpers.isNull(null));       // Returns true`
+`console.log(helpers.isNull('null'));     // Returns true`
+`console.log(helpers.isNull('foobar'));      // Returns false`
