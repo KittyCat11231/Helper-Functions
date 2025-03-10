@@ -90,3 +90,10 @@ Examples:
 `console.log(helpers.isNull(null));       // Returns true`
 `console.log(helpers.isNull('null'));     // Returns true`
 `console.log(helpers.isNull('foobar'));      // Returns false`
+
+### nullify
+
+Returns null if the input is a string that says "null", otherwise returns the input.
+
+Usage:
+`let data = helpers.nullify(data)`

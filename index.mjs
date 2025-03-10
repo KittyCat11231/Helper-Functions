@@ -50,6 +50,13 @@ const helpers = {
         } else {
             return false;
         }
+    },
+    nullify: data => {
+        if (data === 'null') {
+            return null;
+        } else {
+            return data;
+        }
     }
 }
 
